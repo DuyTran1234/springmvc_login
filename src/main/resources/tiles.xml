@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE tiles-definitions PUBLIC  
+      "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+      "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">  
+<tiles-definitions>  
+ 
+	<!-- Base Define -->
+	<definition name="base-definition" 
+		template="/WEB-INF/views/layouts/defaultLayout.jsp">   
+		<put-attribute name="header" value="/WEB-INF/views/layouts/header.jsp" />  
+        <put-attribute name="menu" value="/WEB-INF/views/layouts/menu.jsp" />  
+        <put-attribute name="title" value="" />
+        <put-attribute name="body" value="" />  
+        <put-attribute name="footer" value="/WEB-INF/views/layouts/footer.jsp" />  
+    </definition>  
+ 
+    <!-- Home Page -->
+    <definition name="HomePage" extends="base-definition">
+    	<put-attribute name="title" value="Home" />
+    	<put-attribute name="body" value="/WEB-INF/views/home.jsp" />  
+	</definition>
+	
+	<!-- Login Page -->
+    <definition name="LoginPage" extends="base-definition">
+    	<put-attribute name="title" value="Login" />
+    	<put-attribute name="body" value="/WEB-INF/views/login.jsp" />  
+	</definition> 
+	
+	<!-- Register Page -->
+    <definition name="RegisterPage" extends="base-definition">
+    	<put-attribute name="title" value="Register" />
+    	<put-attribute name="body" value="/WEB-INF/views/register.jsp" />  
+	</definition> 
+	
+	<!-- Authenticate Account Page -->
+    <definition name="AuthenticatePage" extends="base-definition">
+    	<put-attribute name="title" value="Authenticate" />
+    	<put-attribute name="body" value="/WEB-INF/views/authenticateAccount.jsp" />  
+	</definition> 
+	
+	<!-- Verification Code Page -->
+    <definition name="VerificationCodePage" extends="base-definition">
+    	<put-attribute name="title" value="Verification" />
+    	<put-attribute name="body" value="/WEB-INF/views/verificationCode.jsp" />  
+	</definition> 
+	
+	<!-- Forget Password Page -->
+    <definition name="ForgetPasswordPage" extends="base-definition">
+    	<put-attribute name="title" value="" />
+    	<put-attribute name="body" value="/WEB-INF/views/forgetPassword.jsp" />  
+	</definition> 
+	
+	<!-- Code Reset Password Page -->
+    <definition name="CodeResetPassword" extends="base-definition">
+    	<put-attribute name="title" value="" />
+    	<put-attribute name="body" value="/WEB-INF/views/verificationCodeResetPassword.jsp" />  
+	</definition> 
+	
+	<!-- Reset Password Page -->
+    <definition name="ResetPassword" extends="base-definition">
+    	<put-attribute name="title" value="Reset Password" />
+    	<put-attribute name="body" value="/WEB-INF/views/resetPassword.jsp" />  
+	</definition>
+	
+	<!-- Admin Add User Page -->
+    <definition name="AdminAddUser" extends="base-definition">
+    	<put-attribute name="title" value="Add User" />
+    	<put-attribute name="body" value="/WEB-INF/views/admin/addUser.jsp" />  
+	</definition>
+	
+	<!-- List User User Page -->
+    <definition name="ListUser" extends="base-definition">
+    	<put-attribute name="title" value="List User" />
+    	<put-attribute name="body" value="/WEB-INF/views/admin/listUser.jsp" />  
+	</definition>
+	
+	<!-- Admin Update User Page -->
+    <definition name="UpdateUser" extends="base-definition">
+    	<put-attribute name="title" value="Update User" />
+    	<put-attribute name="body" value="/WEB-INF/views/admin/updateUser.jsp" />  
+	</definition>
+	
+	<!-- List Product page -->
+    <definition name="AdminListProduct" extends="base-definition">
+    	<put-attribute name="title" value="Update User" />
+    	<put-attribute name="body" value="/WEB-INF/views/admin/listProduct.jsp" />  
+	</definition>
+	
+	<!-- Admin Add Product page -->
+    <definition name="AdminAddProduct" extends="base-definition">
+    	<put-attribute name="title" value="Update User" />
+    	<put-attribute name="body" value="/WEB-INF/views/admin/addProduct.jsp" />  
+	</definition>
+	
+	<!-- Admin Update Product page -->
+    <definition name="AdminUpdateProduct" extends="base-definition">
+    	<put-attribute name="title" value="Update User" />
+    	<put-attribute name="body" value="/WEB-INF/views/admin/updateProduct.jsp" />  
+	</definition>
+	
+	<!-- User Profile page -->
+    <definition name="UserProfile" extends="base-definition">
+    	<put-attribute name="title" value="Update User" />
+    	<put-attribute name="body" value="/WEB-INF/views/user/userProfile.jsp" />  
+	</definition>
+	
+	<!-- Send code change email AJAX page -->
+    <definition name="CodeChangeEmail" extends="base-definition">
+    	<put-attribute name="title" value="" />
+    	<put-attribute name="body" value="/WEB-INF/views/user/confirmCodeChangeEmailAjax.jsp" />
+    	<put-attribute name="header" value="" />  
+        <put-attribute name="menu" value="" />  
+        <put-attribute name="footer" value="" />  
+	</definition>
+	
+	<!-- View Product page -->
+    <definition name="ViewProduct" extends="base-definition">
+    	<put-attribute name="title" value="View Product" />
+    	<put-attribute name="body" value="/WEB-INF/views/viewProducts.jsp" />  
+	</definition>
+	
+	<!-- View Cart page -->
+    <definition name="ViewCart" extends="base-definition">
+    	<put-attribute name="title" value="Cart" />
+    	<put-attribute name="body" value="/WEB-INF/views/viewCart.jsp" />  
+	</definition>
+	
+	<!-- View Transaction History page -->
+    <definition name="TransactionHistory" extends="base-definition">
+    	<put-attribute name="title" value="Transaction History" />
+    	<put-attribute name="body" value="/WEB-INF/views/user/transactionHistory.jsp" />  
+	</definition>
+</tiles-definitions>
